@@ -7,7 +7,20 @@
 </head>
 <body>
     <script>
-        
+        // 1.Program to find the largest number among two numbers
+        const num1 = parseFloat(prompt("Enter the first number:"));
+        const num2 = parseFloat(prompt("Enter the second number:"));
+
+        let largestNumber;
+        if (num1 > num2) 
+        {
+         largestNumber = num1;
+         }
+         if (num2 > num1) 
+         {
+         largestNumber = num2;
+         }
+         document.write(largestNumber + " is the largest number.");
     </script>
     
 </body>

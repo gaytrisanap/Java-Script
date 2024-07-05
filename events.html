@@ -6,10 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-  <button onclick="console.log('Button1')">Button one</button> <br><br>
+  <button type="button" onclick="sayHi()">click here</button>
+   </br>     </br>     </br>
 
-  <button onclick="console.log('Button2')">Button Two</button><br><br>
-
+   <button type="button" ondblclick="sayHello()">Double click</button>
+  </br>     </br>     </br>
+    
   <input type="text" onchange="change()" /> <br><br>
 
   <input type="text" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()"/> <br><br>
@@ -22,6 +24,14 @@
      <br>
      <br>
     <script>
+        function sayHi(){
+            console.log('HII')
+        }
+
+        function sayHello() {
+            console.log('HELLO')
+        }
+
        function change(){
         console.log('change')
        }
@@ -39,16 +49,15 @@
        }
       
        function P(){
-            console.log("Image Over")
+            console.log('Image Over')
         }
         function Q(){
-            console.log("Image Out")
+            console.log('Image Out')
         }
         function R(){
         const number = Math.random();
         console.log(`Image Over: ${number}`); 
         }
-
         </script>
 </body>
 </html>
